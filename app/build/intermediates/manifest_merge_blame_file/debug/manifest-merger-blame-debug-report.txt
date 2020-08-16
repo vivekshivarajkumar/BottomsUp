@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mapbox.storefinder"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:6:22-76
+13
+14    <uses-feature
+14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:9:5-11:35
+15        android:glEsVersion="0x00020000"
+15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:10:9-41
+16        android:required="true" />
+16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:11:9-32
+17    <uses-feature
+17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:12:5-14:36
+18        android:name="android.hardware.wifi"
+18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:13:9-45
+19        android:required="false" /> <!-- Implied by ACCESS_WIFI_STATE. -->
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:14:9-33
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:16:5-67
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:16:22-64
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:18:5-76
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/AndroidManifest.xml:18:22-73
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:5-68
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:22-65
+23
+24    <application
+24-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:8:5-27:19
+25        android:allowBackup="false"
+25-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:9:9-36
+26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+26-->[com.android.support:support-compat:28.0.0] /Users/vivek/.gradle/caches/transforms-2/files-2.1/522d409842ffbf09220059e2c6752d3e/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:10:9-43
+29        android:label="@string/final_app_name"
+29-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:11:9-47
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:12:9-54
+31        android:supportsRtl="true"
+31-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:13:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme.Gray" >
+33-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:14:9-45
+34        <activity
+34-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:15:9-17:70
+35            android:name="com.mapbox.storelocator.activity.Bottom"
+35-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:16:13-44
+36            android:label="@string/title_activity_bottom" />
+36-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:17:13-58
+37        <activity android:name="com.mapbox.storelocator.activity.ThemePickerActivity" />
+37-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:18:9-66
+37-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:18:19-63
+38        <activity android:name="com.mapbox.storelocator.activity.MainActivity" />
+38-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:19:9-59
+38-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:19:19-56
+39        <activity android:name="com.mapbox.storelocator.activity.Login" >
+39-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:20:9-26:20
+39-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:20:19-49
+40            <intent-filter>
+40-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:21:13-25:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:22:17-69
+41-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:22:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:24:17-77
+43-->/Users/vivek/Desktop/Monalisa/BottomsUp/app/src/main/AndroidManifest.xml:24:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <provider
+47-->[android.arch.lifecycle:extensions:1.1.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/433b92ab242b130a672ee2b2b8d6b7f2/extensions-1.1.1/AndroidManifest.xml:23:9-27:43
+48            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+48-->[android.arch.lifecycle:extensions:1.1.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/433b92ab242b130a672ee2b2b8d6b7f2/extensions-1.1.1/AndroidManifest.xml:24:13-83
+49            android:authorities="com.mapbox.storefinder.lifecycle-trojan"
+49-->[android.arch.lifecycle:extensions:1.1.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/433b92ab242b130a672ee2b2b8d6b7f2/extensions-1.1.1/AndroidManifest.xml:25:13-68
+50            android:exported="false"
+50-->[android.arch.lifecycle:extensions:1.1.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/433b92ab242b130a672ee2b2b8d6b7f2/extensions-1.1.1/AndroidManifest.xml:26:13-37
+51            android:multiprocess="true" />
+51-->[android.arch.lifecycle:extensions:1.1.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/433b92ab242b130a672ee2b2b8d6b7f2/extensions-1.1.1/AndroidManifest.xml:27:13-40
+52        <provider
+52-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
+53            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+53-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
+54            android:authorities="com.mapbox.storefinder.mapboxtelemetryinitprovider"
+54-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
+55            android:exported="false"
+55-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
+56            android:initOrder="100" />
+56-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
+57
+58        <service
+58-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
+59            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+59-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
+60            android:permission="android.permission.BIND_JOB_SERVICE" />
+60-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/vivek/.gradle/caches/transforms-2/files-2.1/e6458f24f0d219765f067e43c9f21426/mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
+61    </application>
+62
+63</manifest>

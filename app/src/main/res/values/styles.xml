@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Purple theme -->
+    <style name="AppTheme.Purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_purple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_purple</item>
+        <item name="colorAccent">@color/colorAccent_purple</item>
+    </style>
+
+    <!-- Blue theme -->
+    <style name="AppTheme.Blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_blue</item>
+        <item name="colorAccent">@color/colorAccent_blue</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimary_yellow
+        </item>
+    </style>
+
+    <!-- Green theme -->
+    <style name="AppTheme.Green" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_green</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_green</item>
+        <item name="colorAccent">@color/colorAccent_green</item>
+    </style>
+
+    <!-- Neutral theme -->
+    <style name="AppTheme.Neutral" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_neutral</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_neutral</item>
+        <item name="colorAccent">@color/colorAccent_neutral</item>
+    </style>
+
+    <!-- Gray theme -->
+    <style name="AppTheme.Gray" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_gray</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_gray</item>
+        <item name="colorAccent">@color/colorAccent_gray</item>
+    </style>
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SourceSansPro-Semibold.otf</item>
+    </style>
+
+    <style name="AppTheme.Gray.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Gray.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Gray.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
