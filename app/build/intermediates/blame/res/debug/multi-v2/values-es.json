@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/vivek/Desktop/Monalisa/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
+            "outputFile": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/4d4341b73fe4683e538d52c98dffbe95/appcompat-v7-28.0.0/res/values-es/values-es.xml",
+                    "source": "/Users/arpitsudhir/.gradle/caches/transforms-2/files-2.1/63ac0e16663051940c0973567a9b607c/appcompat-1.0.0/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/res/values-es/values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,195,351,424,503,575,675,763,902,1038,1200,1321,1490,1563",
-                        "endColumns": "139,155,72,78,71,99,87,138,135,161,120,168,72,74",
-                        "endOffsets": "190,346,419,498,570,670,758,897,1033,1195,1316,1485,1558,1633"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2842,2982,3138,3211,3290,3362,3462,3550,3689,3825,3987,4108,4277,4350",
-                        "endColumns": "139,155,72,78,71,99,87,138,135,161,120,168,72,74",
-                        "endOffsets": "2977,3133,3206,3285,3357,3457,3545,3684,3820,3982,4103,4272,4345,4420"
-                    }
-                },
-                {
-                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/522d409842ffbf09220059e2c6752d3e/support-compat-28.0.0/res/values-es/values-es.xml",
+                    "source": "/Users/arpitsudhir/.gradle/caches/transforms-2/files-2.1/ed871dbc6458697fff19de54c02c2d07/core-1.0.0/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/83e588f915f6bda2a5048fa8c19a4dab/navigation-ui-1.0.0/res/values-es/values-es.xml",
+                    "source": "/Users/arpitsudhir/.gradle/caches/transforms-2/files-2.1/22d952fb3ce2e967acb8d5e515312b58/jetified-mapbox-android-sdk-8.1.0/res/values-es/values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,195,351,424,503,575,675,763,902,1038,1200,1321,1490,1563",
+                        "endColumns": "139,155,72,78,71,99,87,138,135,161,120,168,72,74",
+                        "endOffsets": "190,346,419,498,570,670,758,897,1033,1195,1316,1485,1558,1633"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2842,2982,3138,3211,3290,3362,3462,3550,3689,3825,3987,4108,4277,4350",
+                        "endColumns": "139,155,72,78,71,99,87,138,135,161,120,168,72,74",
+                        "endOffsets": "2977,3133,3206,3285,3357,3457,3545,3684,3820,3982,4103,4272,4345,4420"
+                    }
+                },
+                {
+                    "source": "/Users/arpitsudhir/.gradle/caches/transforms-2/files-2.1/bf743855492ceb19dcebf3e265f37f3d/navigation-ui-2.0.0-rc02/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

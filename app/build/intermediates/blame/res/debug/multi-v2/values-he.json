@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/vivek/Desktop/Monalisa/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
+            "outputFile": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/res/values-he/values-he.xml",
+                    "source": "/Users/arpitsudhir/.gradle/caches/transforms-2/files-2.1/22d952fb3ce2e967acb8d5e515312b58/jetified-mapbox-android-sdk-8.1.0/res/values-he/values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
