@@ -814,6 +814,7 @@ color navigationRouteLine_neutral
 color navigationRouteLine_purple
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1071,6 +1072,10 @@ dimen notification_top_pad_large_text
 dimen secondary_text_size
 dimen space20
 dimen space40
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1187,6 +1192,7 @@ drawable blue_unselected_ice_cream
 drawable blue_unselected_money
 drawable blue_user_location
 drawable bottom_sheet
+drawable bottomshape
 drawable btn_white_selector
 drawable bunny
 drawable cheese_burger_icon
@@ -1253,6 +1259,7 @@ drawable money_bag_icon
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nearme
 drawable neon
 drawable neutral_button_image
 drawable neutral_orange_user_location
@@ -1306,6 +1313,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1329,6 +1337,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id address
 id alertTitle
 id all
 id always
@@ -1346,6 +1355,7 @@ id btn_sign_in
 id btn_sign_up
 id buttonPanel
 id calligraphy_tag_id
+id cancel_action
 id center
 id center_horizontal
 id center_vertical
@@ -1377,6 +1387,7 @@ id distance_num_tv
 id edit_query
 id emoji
 id end
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1412,6 +1423,7 @@ id infowindow_description
 id infowindow_title
 id invisible
 id italic
+id itemName
 id item_touch_helper_previous_elevation
 id iv_logo
 id labeled
@@ -1434,6 +1446,7 @@ id map_activity_framelayout
 id map_layout_rv
 id map_view_location_card
 id masked
+id media_actions
 id menu
 id message
 id middle
@@ -1472,6 +1485,7 @@ id progress_circular
 id progress_horizontal
 id purple_theme_button
 id radio
+id rating
 id right
 id right_icon
 id right_side
@@ -1514,6 +1528,7 @@ id src_in
 id src_over
 id standard
 id start
+id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
@@ -1632,10 +1647,21 @@ layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycle
+layout search_fragment
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1752,6 +1778,7 @@ string title_activity_he
 string title_dashboard
 string title_home
 string title_notifications
+string title_search
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2038,9 +2065,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow

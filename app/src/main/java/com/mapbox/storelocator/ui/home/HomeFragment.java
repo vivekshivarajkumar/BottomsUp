@@ -9,20 +9,20 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.LinearSnapHelper;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SnapHelper;
+import androidx.annotation.RequiresApi;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SnapHelper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 import android.widget.Toast;
 
 import com.mapbox.api.directions.v5.DirectionsCriteria;
@@ -46,7 +46,6 @@ import com.mapbox.mapboxsdk.style.layers.LineLayer;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.mapbox.storelocator.R;
-import com.mapbox.storelocator.activity.MainActivity;
 import com.mapbox.storelocator.adapter.LocationRecyclerViewAdapter;
 import com.mapbox.storelocator.model.IndividualLocation;
 import com.mapbox.storelocator.util.LinearLayoutManagerWithSmoothScroller;
@@ -115,6 +114,8 @@ public class HomeFragment extends Fragment implements
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        Log.e(TAG, "onCreateView: " );
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
 
@@ -132,6 +133,7 @@ public class HomeFragment extends Fragment implements
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.e(TAG, "onViewCreated: ");
 
         // Create a GeoJSON feature collection from the GeoJSON file in the assets folder.
         try {
@@ -241,9 +243,6 @@ public class HomeFragment extends Fragment implements
                             setUpRecyclerViewOfLocationCards(chosenTheme);
 
                             mapboxMap.addOnMapClickListener(HomeFragment.this);
-
-                            Toast.makeText(ctx, "Click on a card", Toast.LENGTH_SHORT).show();
-
 
                             // TODO  Show 3d buildings if the blue theme is being used
 //              if (customThemeManager.getNavigationLineColor() == R.color.colorPrimary_yellow) {
@@ -611,39 +610,51 @@ public class HomeFragment extends Fragment implements
     public void onAttach(Context context) {
         super.onAttach(context);
         ctx=context;
+        Log.e(TAG, "onAttach: " );
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
+        Log.e(TAG, "onDetach: " );
     }
 
 
     @Override
     public void onStart() {
         super.onStart();
+        Log.e(TAG, "onStart: " );
     }
 
     @Override
     public void onPause() {
         super.onPause();
+        Log.e(TAG, "onPause: " );
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        Log.e(TAG, "onResume: " );
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Log.e(TAG, "onDestroy: " );
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        Log.e(TAG, "onDestroyView: " );
     }
 
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+
+    }
 
     class CustomThemeManager {
         private int selectedTheme;

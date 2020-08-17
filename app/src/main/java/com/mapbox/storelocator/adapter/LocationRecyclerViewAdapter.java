@@ -2,15 +2,14 @@ package com.mapbox.storelocator.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.mapbox.storelocator.R;
@@ -51,7 +50,7 @@ public class LocationRecyclerViewAdapter extends
 
   @Override
   public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    int singleRvCardToUse = R.layout.single_location_map_view_rv_card;
+    int singleRvCardToUse = R.layout.recycle;
     View itemView = LayoutInflater.from(parent.getContext()).inflate(singleRvCardToUse, parent, false);
     return new ViewHolder(itemView);
   }
@@ -70,11 +69,11 @@ public class LocationRecyclerViewAdapter extends
 
     IndividualLocation locationCard = listOfLocations.get(position);
 
-    card.nameTextView.setText(locationCard.getName());
-    card.addressTextView.setText(locationCard.getAddress());
-    card.phoneNumTextView.setText(locationCard.getPhoneNum());
-    card.hoursTextView.setText(locationCard.getHours());
-    card.distanceNumberTextView.setText(locationCard.getDistance());
+//    card.nameTextView.setText(locationCard.getName());
+//    card.addressTextView.setText(locationCard.getAddress());
+//    card.phoneNumTextView.setText(locationCard.getPhoneNum());
+//    card.hoursTextView.setText(locationCard.getHours());
+//    card.distanceNumberTextView.setText(locationCard.getDistance());
 
     switch (selectedTheme) {
       case R.style.AppTheme_Blue:
@@ -83,9 +82,9 @@ public class LocationRecyclerViewAdapter extends
         setColors(R.color.colorPrimary_blue, R.color.white, R.color.white, R.color.cardHourAndPhoneTextColor_blue,
           R.color.cardHourAndPhoneHeaderTextColor_blue, R.color.cardHourAndPhoneTextColor_blue,
           R.color.cardHourAndPhoneHeaderTextColor_blue, R.color.white, R.color.white);
-        setAlphas(card, .41f, .48f, 100f, .48f,
-          100f,
-          .41f);
+//        setAlphas(card, .41f, .48f, 100f, .48f,
+//          100f,
+//          .41f);
         break;
       case R.style.AppTheme_Purple:
         emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.cheese_burger_icon, null);
@@ -93,9 +92,9 @@ public class LocationRecyclerViewAdapter extends
         setColors(R.color.white, R.color.white, R.color.white, R.color.cardHourAndPhoneTextColor_purple,
           R.color.cardHourAndPhoneTextColor_purple, R.color.cardHourAndPhoneTextColor_purple,
           R.color.cardHourAndPhoneTextColor_purple, R.color.white, R.color.white);
-        setAlphas(card, .41f, .36f, .94f, .36f,
-          .94f,
-          .41f);
+//        setAlphas(card, .41f, .36f, .94f, .36f,
+//          .94f,
+//          .41f);
         break;
       case R.style.AppTheme_Neutral:
         emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.house_icon, null);
@@ -103,9 +102,9 @@ public class LocationRecyclerViewAdapter extends
         setColors(R.color.colorPrimaryDark_neutral, R.color.black, R.color.black, R.color.black,
           R.color.black, R.color.black,
           R.color.black, R.color.black, R.color.black);
-        setAlphas(card, .37f, .37f, 100f, .37f,
-          100f,
-          .37f);
+//        setAlphas(card, .37f, .37f, 100f, .37f,
+//          100f,
+//          .37f);
         break;
       case R.style.AppTheme_Gray:
         emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.bicycle_icon, null);
@@ -113,23 +112,23 @@ public class LocationRecyclerViewAdapter extends
         setColors(R.color.colorPrimaryDark_gray, R.color.white, R.color.white, R.color.cardHourAndPhoneTextColor_gray,
           R.color.cardHourAndPhoneTextColor_gray, R.color.cardHourAndPhoneTextColor_gray,
           R.color.cardHourAndPhoneTextColor_gray, R.color.white, R.color.white);
-        setAlphas(card, .41f, .48f, 100f, .41f,
-          100f,
-          .41f);
+//        setAlphas(card, .41f, .48f, 100f, .41f,
+//          100f,
+//          .41f);
         break;
     }
 
-    card.emojiImageView.setImageDrawable(emojiForCircle);
-    card.constraintUpperColorSection.setBackgroundColor(upperCardSectionColor);
-    card.backgroundCircleImageView.setImageDrawable(backgroundCircle);
-    card.nameTextView.setTextColor(locationNameColor);
-    card.phoneNumTextView.setTextColor(locationPhoneNumColor);
-    card.hoursTextView.setTextColor(locationHoursColor);
-    card.hoursHeaderTextView.setTextColor(locationHoursHeaderColor);
-    card.distanceNumberTextView.setTextColor(locationDistanceNumColor);
-    card.milesAbbreviationTextView.setTextColor(milesAbbreviationColor);
-    card.addressTextView.setTextColor(locationAddressColor);
-    card.phoneHeaderTextView.setTextColor(locationPhoneHeaderColor);
+//    card.emojiImageView.setImageDrawable(emojiForCircle);
+//    card.constraintUpperColorSection.setBackgroundColor(upperCardSectionColor);
+//    card.backgroundCircleImageView.setImageDrawable(backgroundCircle);
+//    card.nameTextView.setTextColor(locationNameColor);
+//    card.phoneNumTextView.setTextColor(locationPhoneNumColor);
+//    card.hoursTextView.setTextColor(locationHoursColor);
+//    card.hoursHeaderTextView.setTextColor(locationHoursHeaderColor);
+//    card.distanceNumberTextView.setTextColor(locationDistanceNumColor);
+//    card.milesAbbreviationTextView.setTextColor(milesAbbreviationColor);
+//    card.addressTextView.setTextColor(locationAddressColor);
+//    card.phoneHeaderTextView.setTextColor(locationPhoneHeaderColor);
 
   }
 
@@ -175,17 +174,17 @@ public class LocationRecyclerViewAdapter extends
 
     ViewHolder(View itemView) {
       super(itemView);
-      nameTextView = itemView.findViewById(R.id.location_name_tv);
-      addressTextView = itemView.findViewById(R.id.location_description_tv);
-      phoneNumTextView = itemView.findViewById(R.id.location_phone_num_tv);
-      phoneHeaderTextView = itemView.findViewById(R.id.phone_header_tv);
-      hoursTextView = itemView.findViewById(R.id.location_hours_tv);
-      backgroundCircleImageView = itemView.findViewById(R.id.background_circle);
-      emojiImageView = itemView.findViewById(R.id.emoji);
-      constraintUpperColorSection = itemView.findViewById(R.id.constraint_upper_color);
-      distanceNumberTextView = itemView.findViewById(R.id.distance_num_tv);
-      hoursHeaderTextView = itemView.findViewById(R.id.hours_header_tv);
-      milesAbbreviationTextView = itemView.findViewById(R.id.miles_mi_tv);
+//      nameTextView = itemView.findViewById(R.id.location_name_tv);
+//      addressTextView = itemView.findViewById(R.id.location_description_tv);
+//      phoneNumTextView = itemView.findViewById(R.id.location_phone_num_tv);
+//      phoneHeaderTextView = itemView.findViewById(R.id.phone_header_tv);
+//      hoursTextView = itemView.findViewById(R.id.location_hours_tv);
+//      backgroundCircleImageView = itemView.findViewById(R.id.background_circle);
+//      emojiImageView = itemView.findViewById(R.id.emoji);
+//      constraintUpperColorSection = itemView.findViewById(R.id.constraint_upper_color);
+//      distanceNumberTextView = itemView.findViewById(R.id.distance_num_tv);
+//      hoursHeaderTextView = itemView.findViewById(R.id.hours_header_tv);
+//      milesAbbreviationTextView = itemView.findViewById(R.id.miles_mi_tv);
       cardView = itemView.findViewById(R.id.map_view_location_card);
       cardView.setOnClickListener(new View.OnClickListener() {
         @Override

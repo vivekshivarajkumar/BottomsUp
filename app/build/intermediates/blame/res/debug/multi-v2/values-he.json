@@ -4,7 +4,7 @@
             "outputFile": "/Users/vivek/Desktop/Monalisa/BottomsUp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/fa1a8571bc494f1beadcbd94046205c1/mapbox-android-sdk-8.1.0/res/values-he/values-he.xml",
+                    "source": "/Users/vivek/.gradle/caches/transforms-2/files-2.1/18f74d52108e5d9c7238e362ba7bd7f5/jetified-mapbox-android-sdk-8.1.0/res/values-he/values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
