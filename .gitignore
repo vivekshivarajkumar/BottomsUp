@@ -190,6 +190,7 @@ hs_err_pid*
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+workspace.xml
 
 # Mongo Explorer plugin
 .idea/mongoSettings.xml
