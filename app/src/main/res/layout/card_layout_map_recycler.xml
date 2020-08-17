@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.4 Km"
+            android:textSize="12dp"
+            android:drawableRight="@drawable/ic_baseline_near_me_24"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yolo Pub"
+            android:layout_marginTop="6dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_below="@+id/rating"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Here"
+            android:layout_below="@+id/itemName"
+            android:layout_marginLeft="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Now"
+            android:textStyle="bold"
+            android:textColor="#32CD32"
+            android:layout_below="@+id/address"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
