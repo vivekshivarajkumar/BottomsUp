@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mapbox.storelocator">
+    package="bottomsup.mapbox.app">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,11 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Gray">
         <activity
-            android:name=".activity.Bottom"
+            android:name="bottomsup.mapbox.app.activity.Bottom"
             android:label="@string/title_activity_bottom"></activity>
-        <activity android:name=".activity.ThemePickerActivity" />
-        <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.Login">
+        <activity android:name="bottomsup.mapbox.app.activity.ThemePickerActivity" />
+        <activity android:name="bottomsup.mapbox.app.activity.MainActivity" />
+        <activity android:name="bottomsup.mapbox.app.activity.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
