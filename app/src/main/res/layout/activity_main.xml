@@ -8,8 +8,7 @@
     <com.flaviofaria.kenburnsview.KenBurnsView
         android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/neon" />
+        android:layout_height="match_parent" />
 
     <ImageView
         android:id="@+id/iv_logo"

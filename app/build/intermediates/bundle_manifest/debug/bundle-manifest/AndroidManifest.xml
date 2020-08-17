@@ -23,7 +23,7 @@
 
     <application
         android:allowBackup="false"
-        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/final_app_name"
@@ -45,11 +45,6 @@
         </activity>
 
         <provider
-            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.mapbox.storefinder.lifecycle-trojan"
-            android:exported="false"
-            android:multiprocess="true" />
-        <provider
             android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
             android:authorities="com.mapbox.storefinder.mapboxtelemetryinitprovider"
             android:exported="false"
@@ -58,6 +53,12 @@
         <service
             android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.mapbox.storefinder.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

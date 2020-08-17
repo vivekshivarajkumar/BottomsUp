@@ -1412,6 +1412,7 @@ id infowindow_description
 id infowindow_title
 id invisible
 id italic
+id itemName
 id item_touch_helper_previous_elevation
 id iv_logo
 id labeled
@@ -1624,6 +1625,7 @@ layout design_text_input_password_icon
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
+layout map_recycler_card
 layout mapbox_attribution_list_item
 layout mapbox_infowindow_content
 layout mapbox_mapview_internal

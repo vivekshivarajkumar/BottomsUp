@@ -840,6 +840,10 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/house_icon.png"
     },
     {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/layout_map_recycler_card.xml.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/layout/map_recycler_card.xml"
+    },
+    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_white_unselected_bike.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/white_unselected_bike.png"
     },

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="124dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:outlineSpotShadowColor="@android:color/holo_green_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte with Turmeric"
+            android:layout_marginTop="12dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starbucks Coffee"
+            android:layout_below="@+id/itemName"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_green_dark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reorder"
+                android:textSize="@dimen/txt16"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/background_light"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/txt16"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="@dimen/txt16"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/background_light"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/txt16"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
