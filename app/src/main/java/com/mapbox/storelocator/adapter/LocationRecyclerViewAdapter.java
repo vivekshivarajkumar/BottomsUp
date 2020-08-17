@@ -50,7 +50,7 @@ public class LocationRecyclerViewAdapter extends
 
   @Override
   public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    int singleRvCardToUse = R.layout.map_recycler_card;
+    int singleRvCardToUse = R.layout.card_layout_map_recycler;
     View itemView = LayoutInflater.from(parent.getContext()).inflate(singleRvCardToUse, parent, false);
     return new ViewHolder(itemView);
   }

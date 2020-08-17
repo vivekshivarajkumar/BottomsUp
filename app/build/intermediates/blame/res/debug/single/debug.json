@@ -40,16 +40,20 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable/animation_list.xml"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_blue_selected_ice_cream.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/blue_selected_ice_cream.png"
-    },
-    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_white_unselected_house.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/white_unselected_house.png"
     },
     {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_blue_selected_ice_cream.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/blue_selected_ice_cream.png"
+    },
+    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xhdpi_gray_user_location.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xhdpi/gray_user_location.png"
+    },
+    {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_near_me_24.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_near_me_24.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_blue_circle.png.flat",
@@ -72,12 +76,12 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxhdpi/purple_selected_burger.png"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_green_button_image.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/green_button_image.png"
-    },
-    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_green_button_image.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/green_button_image.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -112,44 +116,48 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_dashboard_black_24dp.png"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-mdpi_purple_circle.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-mdpi/purple_circle.png"
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_purple_user_location.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/purple_user_location.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-mdpi_ice_cream_icon.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-mdpi/ice_cream_icon.png"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_purple_user_location.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/purple_user_location.png"
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-mdpi_purple_circle.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-mdpi/purple_circle.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xhdpi_purple_selected_burger.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xhdpi/purple_selected_burger.png"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_neutral_orange_user_location.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxhdpi/neutral_orange_user_location.png"
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_near_me_24.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_near_me_24.png"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_divider_line.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/divider_line.png"
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_neutral_orange_user_location.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxhdpi/neutral_orange_user_location.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable_notification.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable/notification.png"
     },
     {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_divider_line.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/divider_line.png"
+    },
+    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xhdpi_white_circle.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xhdpi/white_circle.png"
     },
     {
-        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_blue_selected_burger.png.flat",
-        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/blue_selected_burger.png"
-    },
-    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_rect_dotted.xml.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/rect_dotted.xml"
+    },
+    {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_blue_selected_burger.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/blue_selected_burger.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_white_circle.png.flat",
@@ -258,6 +266,10 @@
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_purple_unselected_burger.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxxhdpi/purple_unselected_burger.png"
+    },
+    {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_baseline_near_me_24.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-hdpi/ic_baseline_near_me_24.png"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_purple_user_location.png.flat",
@@ -676,6 +688,10 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-hdpi/divider_line.png"
     },
     {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_near_me_24.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_near_me_24.png"
+    },
+    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xhdpi_green_user_location.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xhdpi/green_user_location.png"
     },
@@ -778,6 +794,10 @@
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-mdpi_white_unselected_house.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-mdpi/white_unselected_house.png"
+    },
+    {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/layout_card_layout_map_recycler.xml.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/layout/card_layout_map_recycler.xml"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-mdpi_gray_circle.png.flat",
@@ -1092,6 +1112,10 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-mdpi/gray_selected_house.png"
     },
     {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_near_me_24.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_near_me_24.png"
+    },
+    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_money_bag_icon.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxhdpi/money_bag_icon.png"
     },
@@ -1216,6 +1240,10 @@
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-mdpi/blue_unselected_money.png"
     },
     {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_near_me_24.png.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_near_me_24.png"
+    },
+    {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xhdpi_blue_selected_house.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xhdpi/blue_selected_house.png"
     },
@@ -1238,6 +1266,10 @@
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_blue_button_image.png.flat",
         "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/src/main/res/drawable-xxhdpi/blue_button_image.png"
+    },
+    {
+        "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_baseline_near_me_24.xml.flat",
+        "source": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_baseline_near_me_24.xml"
     },
     {
         "merged": "/Users/arpitsudhir/Downloads/BottomsUp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notifications_black_24dp.png.flat",

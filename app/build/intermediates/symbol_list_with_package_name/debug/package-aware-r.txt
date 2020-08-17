@@ -1214,6 +1214,7 @@ drawable green_user_location
 drawable ham
 drawable hammered
 drawable house_icon
+drawable ic_baseline_near_me_24
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_mtrl_chip_checked_black
@@ -1329,6 +1330,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id address
 id alertTitle
 id all
 id always
@@ -1473,6 +1475,7 @@ id progress_circular
 id progress_horizontal
 id purple_theme_button
 id radio
+id rating
 id right
 id right_icon
 id right_side
@@ -1608,6 +1611,7 @@ layout activity_main
 layout activity_map
 layout activity_theme_picker
 layout bottom_sheet_login
+layout card_layout_map_recycler
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
