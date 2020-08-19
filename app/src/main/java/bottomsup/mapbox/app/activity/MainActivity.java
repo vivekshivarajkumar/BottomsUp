@@ -216,8 +216,8 @@ public class MainActivity extends AppCompatActivity implements
             MainActivity.this.mapboxMap = mapboxMap;
 
             // Adjust the opacity of the Mapbox logo in the lower left hand corner of the map
-            ImageView logo = mapView.findViewById(R.id.logoView);
-            logo.setAlpha(MAPBOX_LOGO_OPACITY);
+//            ImageView logo = mapView.findViewById(R.id.logoView);
+//            logo.setAlpha(MAPBOX_LOGO_OPACITY);
 
             // Set bounds for the map camera so that the user can't pan the map outside of the NYC area
             mapboxMap.setLatLngBoundsForCameraTarget(LOCKED_MAP_CAMERA_BOUNDS);

@@ -26,6 +26,7 @@ import androidx.lifecycle.ViewModelProviders;
 import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.snackbar.Snackbar;
 import com.mapbox.api.directions.v5.DirectionsCriteria;
 import com.mapbox.api.directions.v5.MapboxDirections;
 import com.mapbox.api.directions.v5.models.DirectionsResponse;
@@ -53,7 +54,13 @@ import bottomsup.mapbox.app.model.IndividualLocation;
 import bottomsup.mapbox.app.util.LinearLayoutManagerWithSmoothScroller;
 import com.mapbox.turf.TurfConstants;
 import com.mapbox.turf.TurfConversion;
+import com.uber.sdk.android.core.UberSdk;
+import com.uber.sdk.android.rides.RideParameters;
+import com.uber.sdk.android.rides.RideRequestButton;
+import com.uber.sdk.android.rides.RideRequestButtonCallback;
+import com.uber.sdk.rides.client.ServerTokenSession;
 import com.uber.sdk.rides.client.SessionConfiguration;
+import com.uber.sdk.rides.client.error.ApiError;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -117,6 +124,8 @@ public class HomeFragment extends Fragment implements
     LinearLayout linearLayout;
     private Context ctx;
     private View bottomSheet;
+    private RideRequestButton blackButton;
+    private BottomSheetBehavior<View> mBottomSheetBehavior;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -137,16 +146,18 @@ public class HomeFragment extends Fragment implements
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Log.e(TAG, "onViewCreated: ");
 
 
+
+
         bottomSheet = view.findViewById(R.id.bottom_sheet1);
-        final BottomSheetBehavior mBottomSheetBehavior1 = BottomSheetBehavior.from(bottomSheet);
-        mBottomSheetBehavior1.setPeekHeight(120);
-        mBottomSheetBehavior1.setState(BottomSheetBehavior.STATE_COLLAPSED);
-        mBottomSheetBehavior1.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+        mBottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
+        mBottomSheetBehavior.setPeekHeight(120);
+        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
@@ -162,15 +173,16 @@ public class HomeFragment extends Fragment implements
 
             @Override
             public void onSlide(@NonNull View bottomSheet, float slideOffset) {
+
             }
         });
 
-        view.findViewById(R.id.menu).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mBottomSheetBehavior1.setState(BottomSheetBehavior.STATE_EXPANDED);
-            }
-        });
+//        view.findViewById(R.id.menu).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mBottomSheetBehavior1.setState(BottomSheetBehavior.STATE_EXPANDED);
+//            }
+//        });
 
 
         // Create a GeoJSON feature collection from the GeoJSON file in the assets folder.
@@ -213,8 +225,8 @@ public class HomeFragment extends Fragment implements
                          mapboxMap= mapboxMapX;
 
                         // Adjust the opacity of the Mapbox logo in the lower left hand corner of the map
-                        ImageView logo = mapView.findViewById(R.id.logoView);
-                        logo.setAlpha(MAPBOX_LOGO_OPACITY);
+//                        ImageView logo = mapView.findViewById(R.id.logoView);
+//                        logo.setAlpha(MAPBOX_LOGO_OPACITY);
 
                         // Set bounds for the map camera so that the user can't pan the map outside of the NYC area
                         mapboxMap.setLatLngBoundsForCameraTarget(LOCKED_MAP_CAMERA_BOUNDS);
@@ -272,6 +284,7 @@ public class HomeFragment extends Fragment implements
                                 // Call getInformationFromDirectionsApi() to eventually display the location's
                                 // distance from mocked device location
                                 getInformationFromDirectionsApi(singleLocationPosition, false, x);
+
                             }
                             // Add the fake device location marker to the map. In a real use case scenario,
                             // the Maps SDK's LocationComponent can be used to easily display and customize
@@ -298,23 +311,6 @@ public class HomeFragment extends Fragment implements
 
     }
 
-    private void validateConfiguration(SessionConfiguration configuration) {
-        String nullError = "%s must not be null";
-        String sampleError = "Please update your %s in the gradle.properties of the project before " +
-                "using the Uber SDK Sample app. For a more secure storage location, " +
-                "please investigate storing in your user home gradle.properties ";
-
-        checkNotNull(configuration, String.format(nullError, "SessionConfiguration"));
-        checkNotNull(configuration.getClientId(), String.format(nullError, "Client ID"));
-        checkNotNull(configuration.getRedirectUri(), String.format(nullError, "Redirect URI"));
-        checkNotNull(configuration.getServerToken(), String.format(nullError, "Server Token"));
-        checkState(!configuration.getClientId().equals("insert_your_client_id_here"),
-                String.format(sampleError, "Client ID"));
-        checkState(!configuration.getRedirectUri().equals("insert_your_redirect_uri_here"),
-                String.format(sampleError, "Redirect URI"));
-        checkState(!configuration.getRedirectUri().equals("insert_your_server_token_here"),
-                String.format(sampleError, "Server Token"));
-    }
 
     @Override
     public boolean onMapClick(@NonNull LatLng point) {
@@ -323,6 +319,7 @@ public class HomeFragment extends Fragment implements
     }
 
     private boolean handleClickIcon(PointF screenPoint) {
+
         List<Feature> features = mapboxMap.queryRenderedFeatures(screenPoint, "store-location-layer-id");
         if (!features.isEmpty()) {
             String name = features.get(0).getStringProperty("name");
@@ -334,27 +331,30 @@ public class HomeFragment extends Fragment implements
 
                     if (featureSelectStatus(i)) {
                         setFeatureSelectState(featureList.get(i), false);
+                        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                     } else {
                         setSelected(i);
+                        //TODO here!
+                        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                     }
-                    if (selectedFeaturePoint.latitude() != MOCK_DEVICE_LOCATION_LAT_LNG.getLatitude()) {
-                        for (int x = 0; x < featureCollection.features().size(); x++) {
-
-                            if (listOfIndividualLocations.get(x).getLocation().getLatitude() == selectedFeaturePoint.latitude()) {
-                                // Scroll the recyclerview to the selected marker's card. It's "x-1" below because
-                                // the mock device location marker is part of the marker list but doesn't have its own card
-                                // in the actual recyclerview.
-                                locationsRecyclerView.smoothScrollToPosition(x);
-                            }
-                        }
-                    }
-                    // Check for an internet connection before making the call to Mapbox Directions API
-                    if (deviceHasInternetConnection()) {
-                        // Start call to the Mapbox Directions API
-                        getInformationFromDirectionsApi(selectedFeaturePoint, true, null);
-                    } else {
-                        Toast.makeText(ctx, R.string.no_internet_message, Toast.LENGTH_LONG).show();
-                    }
+//                    if (selectedFeaturePoint.latitude() != MOCK_DEVICE_LOCATION_LAT_LNG.getLatitude()) {
+//                        for (int x = 0; x < featureCollection.features().size(); x++) {
+//
+//                            if (listOfIndividualLocations.get(x).getLocation().getLatitude() == selectedFeaturePoint.latitude()) {
+//                                // Scroll the recyclerview to the selected marker's card. It's "x-1" below because
+//                                // the mock device location marker is part of the marker list but doesn't have its own card
+//                                // in the actual recyclerview.
+//                                locationsRecyclerView.smoothScrollToPosition(x);
+//                            }
+//                        }
+//                    }
+//                    // Check for an internet connection before making the call to Mapbox Directions API
+//                    if (deviceHasInternetConnection()) {
+//                        // Start call to the Mapbox Directions API
+//                        getInformationFromDirectionsApi(selectedFeaturePoint, true, null);
+//                    } else {
+//                        Toast.makeText(ctx, R.string.no_internet_message, Toast.LENGTH_LONG).show();
+//                    }
                 } else {
                     setFeatureSelectState(featureList.get(i), false);
                 }
@@ -538,6 +538,7 @@ public class HomeFragment extends Fragment implements
                         // Retrieve and draw the navigation route on the map
                         currentRoute = response.body().routes().get(0);
                         drawNavigationPolylineRoute(currentRoute);
+
                     } else {
                         // Use Mapbox Turf helper method to convert meters to miles and then format the mileage number
                         DecimalFormat df = new DecimalFormat("#.#");
