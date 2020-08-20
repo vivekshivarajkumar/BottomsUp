@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/bottom_sheet1"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-    android:layout_height="600dp"
+    android:layout_height="540dp"
     android:background="@android:color/transparent">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -38,11 +38,99 @@
         app:ticketShowBorder="false"
         app:ticketShowDivider="false">
 
-        <FrameLayout
-            android:id="@+id/fragment_holder"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </FrameLayout>
+            android:layout_height="match_parent"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/cafe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yolo Pub"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="65dp"/>
+
+            <TextView
+                android:id="@+id/address_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cafe_name"
+                android:text="Address Here"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/workingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_here"
+                android:text="Working Time"
+                android:textSize="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="38dp"/>
+
+            <TextView
+                android:id="@+id/working_hours_of_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_here"
+                android:text="08:00 - 12:00"
+                android:textSize="14dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="38dp"/>
+
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workingTextView"
+                android:text="Distance"
+                android:textSize="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="28dp"/>
+
+
+            <TextView
+                android:id="@+id/distance_from_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/working_hours_of_cafe"
+                android:text="900m"
+                android:textSize="14dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="28dp"/>
+
+            <Button
+                android:id="@+id/make_order"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:layout_centerHorizontal="true"
+                android:text="Make Order"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@+id/distanceTextView"/>
+
+            <Button
+                android:id="@+id/get_directions"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Get Directions"
+                android:textAllCaps="false"
+                android:padding="8dp"
+                android:background="@drawable/button_background_directions"
+                android:layout_below="@+id/make_order"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"/>
+
+        </RelativeLayout>
 
     </bottomsup.mapbox.app.activity.TicketView>
 
