@@ -134,6 +134,36 @@
             android:layout_gravity="bottom"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="80dp"/>
+
+        <Button
+            android:id="@+id/distance_to_you"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stop_show_route"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_background_distance"
+            android:visibility="gone"
+            android:text="Distance to you"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/stop_show_route"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_centerHorizontal="true"
+            android:text="Stop Showing Route"
+            android:textAllCaps="false"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone"
+            android:textColor="@android:color/background_light"
+            android:layout_below="@+id/distanceTextView"/>
+
+
     </RelativeLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

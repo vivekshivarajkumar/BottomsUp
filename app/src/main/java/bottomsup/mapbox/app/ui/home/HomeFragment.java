@@ -17,6 +17,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
@@ -78,6 +81,7 @@ import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
 import static com.mapbox.mapboxsdk.style.expressions.Expression.eq;
 import static com.mapbox.mapboxsdk.style.expressions.Expression.get;
 import static com.mapbox.mapboxsdk.style.expressions.Expression.literal;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.stop;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAllowOverlap;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconIgnorePlacement;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
@@ -113,6 +117,10 @@ public class HomeFragment extends Fragment implements
     private LocationRecyclerViewAdapter styleRvAdapter;
     private int chosenTheme;
     private String TAG = "HomeFragment";
+
+    private Button getDirections;
+    private Button stopRouteShow;
+    private Button distanceButton;
 
 
     //Animator
@@ -202,6 +210,7 @@ public class HomeFragment extends Fragment implements
         // Set up the Mapbox map
         mapView = view.findViewById(R.id.mapView);
         locationsRecyclerView = view.findViewById(R.id.map_layout_rv);
+        locationsRecyclerView.setVisibility(View.VISIBLE);
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
@@ -308,7 +317,28 @@ public class HomeFragment extends Fragment implements
             }
         });
 
+        getDirections = view.findViewById(R.id.get_directions);
+        distanceButton = view.findViewById(R.id.distance_to_you);
+        stopRouteShow = view.findViewById(R.id.stop_show_route);
+        getDirections.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                startPopulatingViews();
+            }
+        });
 
+
+    }
+
+    private void startPopulatingViews() {
+        locationsRecyclerView.setVisibility(View.GONE);
+        Animation animZoomIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_anim);
+        Animation rotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotation_anim);
+        stopRouteShow.setVisibility(View.VISIBLE);
+        stopRouteShow.setAnimation(animZoomIn);
+        distanceButton.setVisibility(View.VISIBLE);
+        distanceButton.setAnimation(rotation);
     }
 
 
