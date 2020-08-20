@@ -34,7 +34,6 @@ public class Login extends AppCompatActivity {
                 .setFontAttrId(R.attr.fontPath)
                 .build());
 
-
 //        checkIfAlreadyLoggedIn();
 
         changeStatusBarColor();

@@ -185,8 +185,8 @@ public class TicketView extends LinearLayout {
                 mPath.lineTo(right, bottom);
             }
 
-            mRect.set(left + offset, bottom - mScallopRadius, mScallopHeight + offset + left, bottom + mScallopRadius);
-            mPath.arcTo(mRect, 0.0f, -180.0f, false);
+//            mRect.set(left + offset, bottom - mScallopRadius, mScallopHeight + offset + left, bottom + mScallopRadius);
+//            mPath.arcTo(mRect, 0.0f, -180.0f, false);
 
             if (mCornerType == CornerType.ROUNDED) {
 
