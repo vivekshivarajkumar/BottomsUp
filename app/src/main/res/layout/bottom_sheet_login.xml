@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView android:id="@+id/bottom_sheet1"
+<bottomsup.mapbox.app.activity.TicketView
+    android:id="@+id/bottom_sheet1"
     android:layout_width="match_parent"
     android:layout_height="500dp"
     android:clipToPadding="true"
-    android:background="@drawable/bottom_sheet"
+    android:background="@android:color/transparent"
+    app:ticketBorderWidth="1dp"
+    app:ticketCornerType="rounded"
+    app:ticketCornerRadius="50dp"
+    app:ticketElevation="8dp"
+    app:ticketOrientation="vertical"
+    app:ticketScallopPositionPercent="50"
+    app:ticketScallopRadius="50dp"
+    app:ticketShowBorder="false"
+    app:ticketShowDivider="false"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -15,4 +25,4 @@
 
     </FrameLayout>
 
-</androidx.core.widget.NestedScrollView>
+</bottomsup.mapbox.app.activity.TicketView>
